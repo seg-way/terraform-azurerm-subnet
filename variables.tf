@@ -16,7 +16,3 @@ variable "subnet" {
   description = "(optional) describe your variable"
 }
 
-variable "network" {
-  type        = string
-  description = "(optional) describe your variable"
-}

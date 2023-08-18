@@ -16,8 +16,14 @@ variable "subnet" {
   description = "(optional) describe your variable"
 }
 
-variable "enforce_private_link_endpoint_network_policies" {
+variable "private_endpoint_network_policies_enabled" {
   type = bool
-  default = false
+  default = true
+  description = "(optional) describe your variable"
+}
+
+variable "private_link_service_network_policies_enabled" {
+  type = bool
+  default = true
   description = "(optional) describe your variable"
 }

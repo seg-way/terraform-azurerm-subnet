@@ -7,23 +7,29 @@ variable "name" {
   description = "(optional) describe your variable"
 }
 variable "virtual_network_name" {
-  type = string
+  type        = string
   description = "(optional) describe your variable"
 }
 
 variable "subnet" {
-  type = string
+  type        = string
   description = "(optional) describe your variable"
 }
 
 variable "private_endpoint_network_policies_enabled" {
-  type = bool
-  default = true
+  type        = bool
+  default     = true
   description = "(optional) describe your variable"
 }
 
 variable "private_link_service_network_policies_enabled" {
-  type = bool
-  default = true
+  type        = bool
+  default     = true
+  description = "(optional) describe your variable"
+}
+
+variable "service_endpoints" {
+  type        = list(string)
+  default     = []
   description = "(optional) describe your variable"
 }
